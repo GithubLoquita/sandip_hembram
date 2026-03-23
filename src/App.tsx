@@ -536,18 +536,36 @@ export default function App() {
             <div>
               <h4 className="text-xs font-bold uppercase tracking-widest mb-8 opacity-60">Social</h4>
               <div className="space-y-4">
-                <a href="https://twitter.com/SandipH75207041" target="_blank" rel="noreferrer" className="block text-gray-400 hover:text-accenture-purple transition-colors">Twitter</a>
-                <a href="https://facebook.com/sandip.hembram.395017" target="_blank" rel="noreferrer" className="block text-gray-400 hover:text-accenture-purple transition-colors">Facebook</a>
-                <a href="https://instagram.com/hembram_143" target="_blank" rel="noreferrer" className="block text-gray-400 hover:text-accenture-purple transition-colors">Instagram</a>
-                <a href="https://www.linkedin.com/in/sandip-hembram-400099261/" target="_blank" rel="noreferrer" className="block text-gray-400 hover:text-accenture-purple transition-colors">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/sandip-hembram-400099261/" target="_blank" rel="noreferrer" className="flex items-center text-gray-400 hover:text-accenture-purple transition-colors group">
+                  <Linkedin size={18} className="mr-3 group-hover:scale-110 transition-transform" />
+                  LinkedIn
+                </a>
+                <a href="https://github.com/GithubLoquita" target="_blank" rel="noreferrer" className="flex items-center text-gray-400 hover:text-accenture-purple transition-colors group">
+                  <Github size={18} className="mr-3 group-hover:scale-110 transition-transform" />
+                  GitHub
+                </a>
+                <a href="https://twitter.com/SandipH75207041" target="_blank" rel="noreferrer" className="flex items-center text-gray-400 hover:text-accenture-purple transition-colors group">
+                  <Twitter size={18} className="mr-3 group-hover:scale-110 transition-transform" />
+                  Twitter
+                </a>
+                <a href="https://facebook.com/sandip.hembram.395017" target="_blank" rel="noreferrer" className="flex items-center text-gray-400 hover:text-accenture-purple transition-colors group">
+                  <Facebook size={18} className="mr-3 group-hover:scale-110 transition-transform" />
+                  Facebook
+                </a>
+                <a href="https://instagram.com/hembram_143" target="_blank" rel="noreferrer" className="flex items-center text-gray-400 hover:text-accenture-purple transition-colors group">
+                  <Instagram size={18} className="mr-3 group-hover:scale-110 transition-transform" />
+                  Instagram
+                </a>
               </div>
             </div>
 
             <div>
               <h4 className="text-xs font-bold uppercase tracking-widest mb-8 opacity-60">Connect</h4>
               <div className="space-y-4">
-                <a href="https://github.com/GithubLoquita" target="_blank" rel="noreferrer" className="block text-gray-400 hover:text-accenture-purple transition-colors">GitHub</a>
-                <a href="mailto:sandiphembram405@gmail.com" className="block text-gray-400 hover:text-accenture-purple transition-colors">Email</a>
+                <a href="mailto:sandiphembram405@gmail.com" className="flex items-center text-gray-400 hover:text-accenture-purple transition-colors group">
+                  <Mail size={18} className="mr-3 group-hover:scale-110 transition-transform" />
+                  Email
+                </a>
               </div>
             </div>
           </div>
