@@ -267,7 +267,7 @@ export default function App() {
           >
             <div className="w-full aspect-square bg-gray-100 dark:bg-gray-900 relative overflow-hidden">
               <img 
-                src="https://picsum.photos/seed/sandip/800/800" 
+                src="https://res.cloudinary.com/drh369n9m/image/upload/v1774207578/WhatsApp_Image_2026-02-14_at_12.55.52_AM_kstau4.jpg" 
                 alt="Sandip Hembram" 
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                 referrerPolicy="no-referrer"
