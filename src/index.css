@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-accenture-purple: #A100FF;
+  --color-accenture-black: #000000;
+  --color-accenture-gray: #767676;
+  --color-accenture-light-gray: #F0F0F0;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white text-black transition-colors duration-300;
+  }
+  .dark body {
+    @apply bg-black text-white;
+  }
+}
+
+@layer components {
+  .accenture-card {
+    @apply bg-white dark:bg-[#121212] border-t-4 border-accenture-purple p-8 shadow-lg hover:shadow-xl transition-all duration-300;
+  }
+  .accenture-btn {
+    @apply px-8 py-3 font-bold uppercase tracking-wider transition-all duration-300 flex items-center justify-center;
+  }
+  .accenture-btn-primary {
+    @apply bg-accenture-purple text-white hover:bg-white hover:text-accenture-purple border-2 border-accenture-purple;
+  }
+  .accenture-btn-secondary {
+    @apply bg-transparent text-black dark:text-white border-2 border-black dark:border-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black;
+  }
+  .accenture-gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accenture-purple to-purple-400;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
