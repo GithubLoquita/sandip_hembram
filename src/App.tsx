@@ -90,10 +90,10 @@ const EXPERIENCES: Experience[] = [
     icon: <Cpu className="text-google-blue" />
   },
   {
-    company: "SESWA WB",
+    company: "Santal Engineering Students’ Welfare Association – West Bengal (SESWA WB)",
     role: "Vice President",
     period: "Nov 2025 - Present",
-    description: "Serving as Vice President of SESWA West Bengal for the 2025–26 session, I coordinate with student representatives and General Body members across the state, lead initiatives for student welfare and community programs, and assist the President and General Secretary in planning and executing events, workshops, and leadership activities.",
+    description: "Serving as Vice President for the 2025–26 session, I coordinate with student representatives and General Body members across the state, lead initiatives for student welfare and community programs, and assist the President and General Secretary in planning and executing events, workshops, and leadership activities.",
     icon: <User className="text-google-red" />
   },
   {
@@ -290,20 +290,34 @@ export default function App() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="space-y-8 text-2xl text-gray-800 dark:text-gray-200 leading-relaxed font-light"
+              className="space-y-12 text-gray-800 dark:text-gray-200 leading-relaxed"
             >
-              <p>
+              <p className="text-2xl font-light">
                 I am a web developer dedicated to exploring the frontier of <span className="text-accenture-purple font-bold">new technology</span>. 
                 My work is defined by the intersection of complex systems and human-centric design.
               </p>
-              <p>
-                Based in <span className="font-bold">Kalyani, West Bengal</span>, 
-                I lead <span className="text-accenture-purple font-bold">HGE company</span> and collaborate with 
-                <span className="font-bold"> Apna Physics Academy</span> to push the boundaries of digital education.
-              </p>
-              <div className="pt-8">
-                <button className="accenture-btn accenture-btn-secondary">
-                  Read our story
+              
+              <div className="space-y-12 border-t border-gray-100 dark:border-gray-900 pt-12">
+                <div className="group">
+                  <div className="text-xs font-bold uppercase tracking-widest text-accenture-purple mb-2">2023 — Present</div>
+                  <h4 className="text-3xl font-black uppercase tracking-tighter mb-4 dark:text-white group-hover:translate-x-2 transition-transform">Founder of HGE company</h4>
+                  <p className="text-xl font-light opacity-70 leading-relaxed">
+                    Leading a tech startup focused on building localized digital solutions and AI-driven systems for underserved communities.
+                  </p>
+                </div>
+
+                <div className="group">
+                  <div className="text-xs font-bold uppercase tracking-widest text-accenture-purple mb-2">Nov 2025 — Present</div>
+                  <h4 className="text-3xl font-black uppercase tracking-tighter mb-4 dark:text-white group-hover:translate-x-2 transition-transform">Vice President of SESWA WB</h4>
+                  <p className="text-xl font-light opacity-70 leading-relaxed">
+                    Serving as Vice President of <span className="font-bold">Santal Engineering Students’ Welfare Association – West Bengal (SESWA WB)</span> for the 2025–26 session, coordinating student leadership and community welfare initiatives across the state.
+                  </p>
+                </div>
+              </div>
+
+              <div className="pt-4">
+                <button className="accenture-btn accenture-btn-secondary" onClick={() => document.getElementById('experience')?.scrollIntoView()}>
+                  View full journey
                 </button>
               </div>
             </motion.div>
